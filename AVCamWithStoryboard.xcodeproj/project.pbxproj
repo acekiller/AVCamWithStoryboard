@@ -20,6 +20,10 @@
 		995712D315238CB30024AE28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B415238CB30024AE28 /* Foundation.framework */; };
 		995712DB15238CB30024AE28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 995712D915238CB30024AE28 /* InfoPlist.strings */; };
 		995712DE15238CB30024AE28 /* AVCamWithStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712DD15238CB30024AE28 /* AVCamWithStoryboardTests.m */; };
+		995712E815238CDD0024AE28 /* AVCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712E715238CDD0024AE28 /* AVCamViewController.m */; };
+		995712F015238D020024AE28 /* AVCamCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712EB15238D020024AE28 /* AVCamCaptureManager.m */; };
+		995712F115238D020024AE28 /* AVCamRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712ED15238D020024AE28 /* AVCamRecorder.m */; };
+		995712F215238D020024AE28 /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712EF15238D020024AE28 /* AVCamUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +41,29 @@
 		995712B215238CB30024AE28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		995712B415238CB30024AE28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		995712B615238CB30024AE28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		995712BA15238CB30024AE28 /* AVCamWithStoryboard-Info.plist */ = {isa = PBXFileReference; path = "AVCamWithStoryboard-Info.plist"; sourceTree = "<group>"; };
+		995712BA15238CB30024AE28 /* AVCamWithStoryboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVCamWithStoryboard-Info.plist"; sourceTree = "<group>"; };
 		995712BC15238CB30024AE28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		995712BE15238CB30024AE28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		995712C015238CB30024AE28 /* AVCamWithStoryboard-Prefix.pch */ = {isa = PBXFileReference; path = "AVCamWithStoryboard-Prefix.pch"; sourceTree = "<group>"; };
-		995712C115238CB30024AE28 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		995712C015238CB30024AE28 /* AVCamWithStoryboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCamWithStoryboard-Prefix.pch"; sourceTree = "<group>"; };
+		995712C115238CB30024AE28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		995712C215238CB30024AE28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		995712C515238CB30024AE28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		995712C715238CB30024AE28 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		995712C715238CB30024AE28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		995712C815238CB30024AE28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		995712CF15238CB30024AE28 /* AVCamWithStoryboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCamWithStoryboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		995712D015238CB30024AE28 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		995712D815238CB30024AE28 /* AVCamWithStoryboardTests-Info.plist */ = {isa = PBXFileReference; path = "AVCamWithStoryboardTests-Info.plist"; sourceTree = "<group>"; };
+		995712D815238CB30024AE28 /* AVCamWithStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVCamWithStoryboardTests-Info.plist"; sourceTree = "<group>"; };
 		995712DA15238CB30024AE28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		995712DC15238CB30024AE28 /* AVCamWithStoryboardTests.h */ = {isa = PBXFileReference; path = AVCamWithStoryboardTests.h; sourceTree = "<group>"; };
+		995712DC15238CB30024AE28 /* AVCamWithStoryboardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCamWithStoryboardTests.h; sourceTree = "<group>"; };
 		995712DD15238CB30024AE28 /* AVCamWithStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCamWithStoryboardTests.m; sourceTree = "<group>"; };
+		995712E715238CDD0024AE28 /* AVCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamViewController.m; sourceTree = "<group>"; };
+		995712E915238CE90024AE28 /* AVCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamViewController.h; sourceTree = "<group>"; };
+		995712EA15238D020024AE28 /* AVCamCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamCaptureManager.h; sourceTree = "<group>"; };
+		995712EB15238D020024AE28 /* AVCamCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamCaptureManager.m; sourceTree = "<group>"; };
+		995712EC15238D020024AE28 /* AVCamRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamRecorder.h; sourceTree = "<group>"; };
+		995712ED15238D020024AE28 /* AVCamRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamRecorder.m; sourceTree = "<group>"; };
+		995712EE15238D020024AE28 /* AVCamUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamUtilities.h; sourceTree = "<group>"; };
+		995712EF15238D020024AE28 /* AVCamUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,14 @@
 		995712B815238CB30024AE28 /* AVCamWithStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				995712EA15238D020024AE28 /* AVCamCaptureManager.h */,
+				995712EB15238D020024AE28 /* AVCamCaptureManager.m */,
+				995712EC15238D020024AE28 /* AVCamRecorder.h */,
+				995712ED15238D020024AE28 /* AVCamRecorder.m */,
+				995712EE15238D020024AE28 /* AVCamUtilities.h */,
+				995712EF15238D020024AE28 /* AVCamUtilities.m */,
+				995712E915238CE90024AE28 /* AVCamViewController.h */,
+				995712E715238CDD0024AE28 /* AVCamViewController.m */,
 				995712C115238CB30024AE28 /* AppDelegate.h */,
 				995712C215238CB30024AE28 /* AppDelegate.m */,
 				995712C415238CB30024AE28 /* MainStoryboard.storyboard */,
@@ -260,6 +280,7 @@
 				995712BF15238CB30024AE28 /* main.m in Sources */,
 				995712C315238CB30024AE28 /* AppDelegate.m in Sources */,
 				995712C915238CB30024AE28 /* ViewController.m in Sources */,
+				995712E815238CDD0024AE28 /* AVCamViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				995712DE15238CB30024AE28 /* AVCamWithStoryboardTests.m in Sources */,
+				995712F015238D020024AE28 /* AVCamCaptureManager.m in Sources */,
+				995712F115238D020024AE28 /* AVCamRecorder.m in Sources */,
+				995712F215238D020024AE28 /* AVCamUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
