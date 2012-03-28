@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		995712B315238CB30024AE28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B215238CB30024AE28 /* UIKit.framework */; };
+		995712B515238CB30024AE28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B415238CB30024AE28 /* Foundation.framework */; };
+		995712B715238CB30024AE28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B615238CB30024AE28 /* CoreGraphics.framework */; };
+		995712BD15238CB30024AE28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 995712BB15238CB30024AE28 /* InfoPlist.strings */; };
+		995712BF15238CB30024AE28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712BE15238CB30024AE28 /* main.m */; };
+		995712C315238CB30024AE28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712C215238CB30024AE28 /* AppDelegate.m */; };
+		995712C615238CB30024AE28 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995712C415238CB30024AE28 /* MainStoryboard.storyboard */; };
+		995712C915238CB30024AE28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712C815238CB30024AE28 /* ViewController.m */; };
+		995712D115238CB30024AE28 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712D015238CB30024AE28 /* SenTestingKit.framework */; };
+		995712D215238CB30024AE28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B215238CB30024AE28 /* UIKit.framework */; };
+		995712D315238CB30024AE28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B415238CB30024AE28 /* Foundation.framework */; };
+		995712DB15238CB30024AE28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 995712D915238CB30024AE28 /* InfoPlist.strings */; };
+		995712DE15238CB30024AE28 /* AVCamWithStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712DD15238CB30024AE28 /* AVCamWithStoryboardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		995712D415238CB30024AE28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 995712A515238CB20024AE28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 995712AD15238CB30024AE28;
+			remoteInfo = AVCamWithStoryboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		995712AE15238CB30024AE28 /* AVCamWithStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCamWithStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		995712B215238CB30024AE28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		995712B415238CB30024AE28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		995712B615238CB30024AE28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		995712BA15238CB30024AE28 /* AVCamWithStoryboard-Info.plist */ = {isa = PBXFileReference; path = "AVCamWithStoryboard-Info.plist"; sourceTree = "<group>"; };
+		995712BC15238CB30024AE28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		995712BE15238CB30024AE28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		995712C015238CB30024AE28 /* AVCamWithStoryboard-Prefix.pch */ = {isa = PBXFileReference; path = "AVCamWithStoryboard-Prefix.pch"; sourceTree = "<group>"; };
+		995712C115238CB30024AE28 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		995712C215238CB30024AE28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		995712C515238CB30024AE28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		995712C715238CB30024AE28 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		995712C815238CB30024AE28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		995712CF15238CB30024AE28 /* AVCamWithStoryboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCamWithStoryboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		995712D015238CB30024AE28 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		995712D815238CB30024AE28 /* AVCamWithStoryboardTests-Info.plist */ = {isa = PBXFileReference; path = "AVCamWithStoryboardTests-Info.plist"; sourceTree = "<group>"; };
+		995712DA15238CB30024AE28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		995712DC15238CB30024AE28 /* AVCamWithStoryboardTests.h */ = {isa = PBXFileReference; path = AVCamWithStoryboardTests.h; sourceTree = "<group>"; };
+		995712DD15238CB30024AE28 /* AVCamWithStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCamWithStoryboardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		995712AB15238CB30024AE28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995712B315238CB30024AE28 /* UIKit.framework in Frameworks */,
+				995712B515238CB30024AE28 /* Foundation.framework in Frameworks */,
+				995712B715238CB30024AE28 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995712CB15238CB30024AE28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995712D115238CB30024AE28 /* SenTestingKit.framework in Frameworks */,
+				995712D215238CB30024AE28 /* UIKit.framework in Frameworks */,
+				995712D315238CB30024AE28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		995712A315238CB20024AE28 = {
+			isa = PBXGroup;
+			children = (
+				995712B815238CB30024AE28 /* AVCamWithStoryboard */,
+				995712D615238CB30024AE28 /* AVCamWithStoryboardTests */,
+				995712B115238CB30024AE28 /* Frameworks */,
+				995712AF15238CB30024AE28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		995712AF15238CB30024AE28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				995712AE15238CB30024AE28 /* AVCamWithStoryboard.app */,
+				995712CF15238CB30024AE28 /* AVCamWithStoryboardTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		995712B115238CB30024AE28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				995712B215238CB30024AE28 /* UIKit.framework */,
+				995712B415238CB30024AE28 /* Foundation.framework */,
+				995712B615238CB30024AE28 /* CoreGraphics.framework */,
+				995712D015238CB30024AE28 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		995712B815238CB30024AE28 /* AVCamWithStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				995712C115238CB30024AE28 /* AppDelegate.h */,
+				995712C215238CB30024AE28 /* AppDelegate.m */,
+				995712C415238CB30024AE28 /* MainStoryboard.storyboard */,
+				995712C715238CB30024AE28 /* ViewController.h */,
+				995712C815238CB30024AE28 /* ViewController.m */,
+				995712B915238CB30024AE28 /* Supporting Files */,
+			);
+			path = AVCamWithStoryboard;
+			sourceTree = "<group>";
+		};
+		995712B915238CB30024AE28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				995712BA15238CB30024AE28 /* AVCamWithStoryboard-Info.plist */,
+				995712BB15238CB30024AE28 /* InfoPlist.strings */,
+				995712BE15238CB30024AE28 /* main.m */,
+				995712C015238CB30024AE28 /* AVCamWithStoryboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		995712D615238CB30024AE28 /* AVCamWithStoryboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				995712DC15238CB30024AE28 /* AVCamWithStoryboardTests.h */,
+				995712DD15238CB30024AE28 /* AVCamWithStoryboardTests.m */,
+				995712D715238CB30024AE28 /* Supporting Files */,
+			);
+			path = AVCamWithStoryboardTests;
+			sourceTree = "<group>";
+		};
+		995712D715238CB30024AE28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				995712D815238CB30024AE28 /* AVCamWithStoryboardTests-Info.plist */,
+				995712D915238CB30024AE28 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		995712AD15238CB30024AE28 /* AVCamWithStoryboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 995712E115238CB30024AE28 /* Build configuration list for PBXNativeTarget "AVCamWithStoryboard" */;
+			buildPhases = (
+				995712AA15238CB30024AE28 /* Sources */,
+				995712AB15238CB30024AE28 /* Frameworks */,
+				995712AC15238CB30024AE28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVCamWithStoryboard;
+			productName = AVCamWithStoryboard;
+			productReference = 995712AE15238CB30024AE28 /* AVCamWithStoryboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		995712CE15238CB30024AE28 /* AVCamWithStoryboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 995712E415238CB30024AE28 /* Build configuration list for PBXNativeTarget "AVCamWithStoryboardTests" */;
+			buildPhases = (
+				995712CA15238CB30024AE28 /* Sources */,
+				995712CB15238CB30024AE28 /* Frameworks */,
+				995712CC15238CB30024AE28 /* Resources */,
+				995712CD15238CB30024AE28 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				995712D515238CB30024AE28 /* PBXTargetDependency */,
+			);
+			name = AVCamWithStoryboardTests;
+			productName = AVCamWithStoryboardTests;
+			productReference = 995712CF15238CB30024AE28 /* AVCamWithStoryboardTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		995712A515238CB20024AE28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 995712A815238CB20024AE28 /* Build configuration list for PBXProject "AVCamWithStoryboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 995712A315238CB20024AE28;
+			productRefGroup = 995712AF15238CB30024AE28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				995712AD15238CB30024AE28 /* AVCamWithStoryboard */,
+				995712CE15238CB30024AE28 /* AVCamWithStoryboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		995712AC15238CB30024AE28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995712BD15238CB30024AE28 /* InfoPlist.strings in Resources */,
+				995712C615238CB30024AE28 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995712CC15238CB30024AE28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995712DB15238CB30024AE28 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		995712CD15238CB30024AE28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		995712AA15238CB30024AE28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995712BF15238CB30024AE28 /* main.m in Sources */,
+				995712C315238CB30024AE28 /* AppDelegate.m in Sources */,
+				995712C915238CB30024AE28 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995712CA15238CB30024AE28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995712DE15238CB30024AE28 /* AVCamWithStoryboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		995712D515238CB30024AE28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 995712AD15238CB30024AE28 /* AVCamWithStoryboard */;
+			targetProxy = 995712D415238CB30024AE28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		995712BB15238CB30024AE28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				995712BC15238CB30024AE28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		995712C415238CB30024AE28 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				995712C515238CB30024AE28 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		995712D915238CB30024AE28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				995712DA15238CB30024AE28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		995712DF15238CB30024AE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		995712E015238CB30024AE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		995712E215238CB30024AE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCamWithStoryboard/AVCamWithStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "AVCamWithStoryboard/AVCamWithStoryboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		995712E315238CB30024AE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCamWithStoryboard/AVCamWithStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "AVCamWithStoryboard/AVCamWithStoryboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		995712E515238CB30024AE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVCamWithStoryboard.app/AVCamWithStoryboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCamWithStoryboard/AVCamWithStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "AVCamWithStoryboardTests/AVCamWithStoryboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		995712E615238CB30024AE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVCamWithStoryboard.app/AVCamWithStoryboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCamWithStoryboard/AVCamWithStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "AVCamWithStoryboardTests/AVCamWithStoryboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		995712A815238CB20024AE28 /* Build configuration list for PBXProject "AVCamWithStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995712DF15238CB30024AE28 /* Debug */,
+				995712E015238CB30024AE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		995712E115238CB30024AE28 /* Build configuration list for PBXNativeTarget "AVCamWithStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995712E215238CB30024AE28 /* Debug */,
+				995712E315238CB30024AE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		995712E415238CB30024AE28 /* Build configuration list for PBXNativeTarget "AVCamWithStoryboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995712E515238CB30024AE28 /* Debug */,
+				995712E615238CB30024AE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 995712A515238CB20024AE28 /* Project object */;
+}
