@@ -1,64 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2177" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="458-ZR-psU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="PjR-MG-OQL">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstScreen" id="2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="-18" y="115"/>
-        </scene>
-        <!--Cam View Controller-->
-        <scene sceneID="hPP-OW-flb">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qxG-bR-DDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="458-ZR-psU" customClass="AVCamViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zlM-FT-Hai">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="uWt-7B-Ggc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="rIp-8o-qBo">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="iJa-fe-2Vw">
+                                        <connections>
+                                            <action selector="captureStillImage:" destination="2" id="fZG-hZ-IUU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" id="5V1-I1-KGq">
+                                <rect key="frame" x="0.0" y="-7" width="320" height="423"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="stillButton" destination="iJa-fe-2Vw" id="wxO-uf-0JV"/>
+                        <outlet property="videoPreviewView" destination="5V1-I1-KGq" id="XkC-na-s7O"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="379" y="133"/>
+            <point key="canvasLocation" x="-84" y="83"/>
+        </scene>
+        <!--Audio Visual View Controller - Something-->
+        <scene sceneID="2Jv-SL-0mJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fo-yc-Ogb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SecondScreen" title="Something" id="PjR-MG-OQL" customClass="AudioVisualViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dpm-cR-Rjs">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="tM6-8P-hHj">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Movie" id="d65-Cy-Vyo">
+                                        <connections>
+                                            <action selector="toggleRecording:" destination="PjR-MG-OQL" id="gij-f1-0dh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="62" style="plain" systemItem="fixedSpace" id="Mru-Sa-Ejk"/>
+                                    <barButtonItem title="Toggle" id="tBs-Ho-QOb">
+                                        <connections>
+                                            <action selector="toggleCamera:" destination="PjR-MG-OQL" id="Zih-Tw-iiX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="56" style="plain" systemItem="fixedSpace" id="IIh-v8-u9o"/>
+                                    <barButtonItem title="Photo" id="f5u-mY-xEm">
+                                        <connections>
+                                            <action selector="captureStillImage:" destination="PjR-MG-OQL" id="Nfg-f9-dUK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" id="tyn-0C-8L5">
+                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" id="QpI-Vr-EQO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Lights, Camera, ACTION!" id="AD8-LH-cqQ"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraToggleButton" destination="tBs-Ho-QOb" id="5Cg-f9-UhD"/>
+                        <outlet property="myToolbar" destination="tM6-8P-hHj" id="yVe-qm-93s"/>
+                        <outlet property="recordButton" destination="d65-Cy-Vyo" id="3qf-tV-mp1"/>
+                        <outlet property="stillButton" destination="f5u-mY-xEm" id="9RK-5Q-Cwy"/>
+                        <outlet property="videoPreviewView" destination="tyn-0C-8L5" id="C1K-7M-qz9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="361" y="83"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AVCamViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AVCamViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="captureStillImage:"/>
-                <relationship kind="action" name="toggleCamera:"/>
-                <relationship kind="action" name="toggleRecording:"/>
-                <relationship kind="outlet" name="cameraToggleButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="focusModeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="recordButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="stillButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="videoPreviewView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -85,6 +85,7 @@
 - (id) init
 {
     self = [super init];
+    NSLog(@"INIT CAPTURE MANAGER...");
     if (self != nil) {
 		__block id weakSelf = self;
         void (^deviceConnectedBlock)(NSNotification *) = ^(NSNotification *notification) {

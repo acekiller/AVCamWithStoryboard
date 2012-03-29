@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9932C1921524E4EF00455122 /* AudioVisualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932C1911524E4EE00455122 /* AudioVisualViewController.m */; };
 		995712B315238CB30024AE28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B215238CB30024AE28 /* UIKit.framework */; };
 		995712B515238CB30024AE28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B415238CB30024AE28 /* Foundation.framework */; };
 		995712B715238CB30024AE28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712B615238CB30024AE28 /* CoreGraphics.framework */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9932C1901524E4EE00455122 /* AudioVisualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioVisualViewController.h; sourceTree = "<group>"; };
+		9932C1911524E4EE00455122 /* AudioVisualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioVisualViewController.m; sourceTree = "<group>"; };
 		995712AE15238CB30024AE28 /* AVCamWithStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCamWithStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995712B215238CB30024AE28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		995712B415238CB30024AE28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 				995712C715238CB30024AE28 /* ViewController.h */,
 				995712C815238CB30024AE28 /* ViewController.m */,
 				995712B915238CB30024AE28 /* Supporting Files */,
+				9932C1901524E4EE00455122 /* AudioVisualViewController.h */,
+				9932C1911524E4EE00455122 /* AudioVisualViewController.m */,
 			);
 			path = AVCamWithStoryboard;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				995712C315238CB30024AE28 /* AppDelegate.m in Sources */,
 				995712C915238CB30024AE28 /* ViewController.m in Sources */,
 				995712E815238CDD0024AE28 /* AVCamViewController.m in Sources */,
+				9932C1921524E4EF00455122 /* AudioVisualViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +497,7 @@
 				995712E315238CB30024AE28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995712E415238CB30024AE28 /* Build configuration list for PBXNativeTarget "AVCamWithStoryboardTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +506,7 @@
 				995712E615238CB30024AE28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

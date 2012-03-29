@@ -49,7 +49,7 @@
 
 @class AVCamCaptureManager, AVCamPreviewView, AVCaptureVideoPreviewLayer;
 
-@interface AVCamViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
+@interface AVCamViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 }
 
 @property (nonatomic,retain) AVCamCaptureManager *captureManager;
@@ -59,11 +59,14 @@
 @property (nonatomic,retain) IBOutlet UIBarButtonItem *recordButton;
 @property (nonatomic,retain) IBOutlet UIBarButtonItem *stillButton;
 @property (nonatomic,retain) IBOutlet UILabel *focusModeLabel;
+@property (strong, nonatomic) IBOutlet UIToolbar *myToolbar;
 
 #pragma mark Toolbar Actions
 - (IBAction)toggleRecording:(id)sender;
 - (IBAction)captureStillImage:(id)sender;
 - (IBAction)toggleCamera:(id)sender;
+- (IBAction)bob:(id)sender;
+- (IBAction)SUE:(id)sender;
 
 @end
 

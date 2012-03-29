@@ -1,7 +1,16 @@
+//
+//  AudioVisualViewController.m
+//  AVCamWithStoryboard
+//
+//  Created by Kevin Muldoon on 3/29/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+
 /*
-     File: AVCamViewController.m
+ File: AVCamViewController.m
  Abstract: A view controller that coordinates the transfer of information between the user interface and the capture manager.
-  Version: 1.2
+ Version: 1.2
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
  Inc. ("Apple") in consideration of your agreement to the following
@@ -45,27 +54,27 @@
  
  */
 
-#import "AVCamViewController.h"
+#import "AudioVisualViewController.h"
 #import "AVCamCaptureManager.h"
 #import "AVCamRecorder.h"
 #import <AVFoundation/AVFoundation.h>
 
 static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 
-@interface AVCamViewController () <UIGestureRecognizerDelegate>
+@interface AudioVisualViewController () <UIGestureRecognizerDelegate>
 @end
 
-@interface AVCamViewController (InternalMethods)
+@interface AudioVisualViewController (InternalMethods)
 - (CGPoint)convertToPointOfInterestFromViewCoordinates:(CGPoint)viewCoordinates;
 - (void)tapToAutoFocus:(UIGestureRecognizer *)gestureRecognizer;
 - (void)tapToContinouslyAutoFocus:(UIGestureRecognizer *)gestureRecognizer;
 - (void)updateButtonStates;
 @end
 
-@interface AVCamViewController (AVCamCaptureManagerDelegate) <AVCamCaptureManagerDelegate>
+@interface AudioVisualViewController (AVCamCaptureManagerDelegate) <AVCamCaptureManagerDelegate>
 @end
 
-@implementation AVCamViewController
+@implementation AudioVisualViewController
 
 @synthesize captureManager;
 @synthesize cameraToggleButton;
@@ -123,7 +132,9 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
     NSLog(@"viewDidLoad");
     //[[self cameraToggleButton] setTitle:NSLocalizedString(@"Camera", @"Toggle camera button title")];
     //[[self recordButton] setTitle:NSLocalizedString(@"Record", @"Toggle recording button record title")];
-    [[self stillButton] setTitle:NSLocalizedString(@"Photo", @"Capture still image button title")];
+    //[[self stillButton] setTitle:NSLocalizedString(@"Photo", @"Capture still image button title")];
+    
+    [super viewDidLoad];
     
 	if ([self captureManager] == nil) {
 		AVCamCaptureManager *manager = [[AVCamCaptureManager alloc] init];
@@ -131,7 +142,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 		//[manager release];
 		
 		[[self captureManager] setDelegate:self];
-
+        
 		if ([[self captureManager] setupSession]) {
             // Create video preview layer and add it to the UI
 			AVCaptureVideoPreviewLayer *newCaptureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:[[self captureManager] session]];
@@ -188,7 +199,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 			//[singleTap release];
 		}		
 	}
-		
+    
     [super viewDidLoad];
 }
 
@@ -210,14 +221,6 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
     
     // Do an initial focus
     [[self captureManager] continuousFocusAtPoint:CGPointMake(.5f, .5f)];
-}
-
-- (IBAction)bob:(id)sender {
-    NSLog(@"BOB");
-}
-
-- (IBAction)SUE:(id)sender {
-    NSLog(@"SUE");
 }
 
 - (IBAction)toggleRecording:(id)sender
@@ -259,7 +262,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 }
 @end
 
-@implementation AVCamViewController (InternalMethods)
+@implementation AudioVisualViewController (InternalMethods)
 
 // Convert from view coordinates to camera coordinates, where {0,0} represents the top left of the picture area, and {1,1} represents
 // the bottom right in landscape mode with the home button on the right.
@@ -271,7 +274,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
     if ([captureVideoPreviewLayer isMirrored]) {
         viewCoordinates.x = frameSize.width - viewCoordinates.x;
     }    
-
+    
     if ( [[captureVideoPreviewLayer videoGravity] isEqualToString:AVLayerVideoGravityResize] ) {
 		// Scale, switch x and y, and reverse x
         pointOfInterest = CGPointMake(viewCoordinates.y / frameSize.height, 1.f - (viewCoordinates.x / frameSize.width));
@@ -282,7 +285,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
                 cleanAperture = CMVideoFormatDescriptionGetCleanAperture([port formatDescription], YES);
                 CGSize apertureSize = cleanAperture.size;
                 CGPoint point = viewCoordinates;
-
+                
                 CGFloat apertureRatio = apertureSize.height / apertureSize.width;
                 CGFloat viewRatio = frameSize.width / frameSize.height;
                 CGFloat xc = .5f;
@@ -347,6 +350,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 // Change to continuous auto focus. The camera will constantly focus at the point choosen.
 - (void)tapToContinouslyAutoFocus:(UIGestureRecognizer *)gestureRecognizer
 {
+    NSLog(@"Got tapped twice");
     if ([[[captureManager videoInput] device] isFocusPointOfInterestSupported])
         [captureManager continuousFocusAtPoint:CGPointMake(.5f, .5f)];
 }
@@ -382,7 +386,7 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 
 @end
 
-@implementation AVCamViewController (AVCamCaptureManagerDelegate)
+@implementation AudioVisualViewController (AVCamCaptureManagerDelegate)
 
 - (void)captureManager:(AVCamCaptureManager *)captureManager didFailWithError:(NSError *)error
 {
@@ -426,3 +430,42 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 }
 
 @end
+
+
+/*
+#import "AudioVisualViewController.h"
+
+@interface AudioVisualViewController ()
+
+@end
+
+@implementation AudioVisualViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end
+*/
