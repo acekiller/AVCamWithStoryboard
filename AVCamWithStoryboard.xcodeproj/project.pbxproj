@@ -24,17 +24,6 @@
 		995712F015238D020024AE28 /* AVCamCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712EB15238D020024AE28 /* AVCamCaptureManager.m */; };
 		995712F115238D020024AE28 /* AVCamRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712ED15238D020024AE28 /* AVCamRecorder.m */; };
 		995712F215238D020024AE28 /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712EF15238D020024AE28 /* AVCamUtilities.m */; };
-		995712F41523948D0024AE28 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712F31523948D0024AE28 /* AVFoundation.framework */; };
-		995712F6152394A20024AE28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712F5152394A20024AE28 /* QuartzCore.framework */; };
-		995712F9152394B40024AE28 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712F7152394B40024AE28 /* CoreMedia.framework */; };
-		995712FA152394B40024AE28 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712F8152394B40024AE28 /* MediaPlayer.framework */; };
-		995712FC152394C40024AE28 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712FB152394C40024AE28 /* CoreVideo.framework */; };
-		995712FE152394CF0024AE28 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712FD152394CF0024AE28 /* MobileCoreServices.framework */; };
-		99571300152394DA0024AE28 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995712FF152394DA0024AE28 /* AssetsLibrary.framework */; };
-		99571302152394E70024AE28 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99571301152394E70024AE28 /* ImageIO.framework */; };
-		99571303152399DE0024AE28 /* AVCamCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712EB15238D020024AE28 /* AVCamCaptureManager.m */; };
-		9957130415239A340024AE28 /* AVCamRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712ED15238D020024AE28 /* AVCamRecorder.m */; };
-		9957130515239A340024AE28 /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 995712EF15238D020024AE28 /* AVCamUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,14 +64,6 @@
 		995712ED15238D020024AE28 /* AVCamRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamRecorder.m; sourceTree = "<group>"; };
 		995712EE15238D020024AE28 /* AVCamUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamUtilities.h; sourceTree = "<group>"; };
 		995712EF15238D020024AE28 /* AVCamUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamUtilities.m; sourceTree = "<group>"; };
-		995712F31523948D0024AE28 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		995712F5152394A20024AE28 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		995712F7152394B40024AE28 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		995712F8152394B40024AE28 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		995712FB152394C40024AE28 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		995712FD152394CF0024AE28 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		995712FF152394DA0024AE28 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		99571301152394E70024AE28 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,14 +74,6 @@
 				995712B315238CB30024AE28 /* UIKit.framework in Frameworks */,
 				995712B515238CB30024AE28 /* Foundation.framework in Frameworks */,
 				995712B715238CB30024AE28 /* CoreGraphics.framework in Frameworks */,
-				995712F41523948D0024AE28 /* AVFoundation.framework in Frameworks */,
-				995712F6152394A20024AE28 /* QuartzCore.framework in Frameworks */,
-				995712FA152394B40024AE28 /* MediaPlayer.framework in Frameworks */,
-				995712F9152394B40024AE28 /* CoreMedia.framework in Frameworks */,
-				995712FC152394C40024AE28 /* CoreVideo.framework in Frameworks */,
-				995712FE152394CF0024AE28 /* MobileCoreServices.framework in Frameworks */,
-				99571300152394DA0024AE28 /* AssetsLibrary.framework in Frameworks */,
-				99571302152394E70024AE28 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,14 +112,6 @@
 		995712B115238CB30024AE28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99571301152394E70024AE28 /* ImageIO.framework */,
-				995712FF152394DA0024AE28 /* AssetsLibrary.framework */,
-				995712FD152394CF0024AE28 /* MobileCoreServices.framework */,
-				995712FB152394C40024AE28 /* CoreVideo.framework */,
-				995712F7152394B40024AE28 /* CoreMedia.framework */,
-				995712F8152394B40024AE28 /* MediaPlayer.framework */,
-				995712F5152394A20024AE28 /* QuartzCore.framework */,
-				995712F31523948D0024AE28 /* AVFoundation.framework */,
 				995712B215238CB30024AE28 /* UIKit.framework */,
 				995712B415238CB30024AE28 /* Foundation.framework */,
 				995712B615238CB30024AE28 /* CoreGraphics.framework */,
@@ -312,9 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9957130415239A340024AE28 /* AVCamRecorder.m in Sources */,
-				9957130515239A340024AE28 /* AVCamUtilities.m in Sources */,
-				99571303152399DE0024AE28 /* AVCamCaptureManager.m in Sources */,
 				995712BF15238CB30024AE28 /* main.m in Sources */,
 				995712C315238CB30024AE28 /* AppDelegate.m in Sources */,
 				995712C915238CB30024AE28 /* ViewController.m in Sources */,

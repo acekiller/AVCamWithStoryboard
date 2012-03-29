@@ -155,19 +155,13 @@
 	[[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
     
     [[self session] stopRunning];
-    session = nil;
-    //videoInput nil;
-    audioInput = nil;
-    stillImageOutput = nil;
-    recorder = nil;
-    /*
     [session release];
     [videoInput release];
     [audioInput release];
     [stillImageOutput release];
     [recorder release];
-    */
-    //[super dealloc];
+    
+    [super dealloc];
 }
 
 - (BOOL) setupSession
@@ -203,7 +197,7 @@
                                     AVVideoCodecJPEG, AVVideoCodecKey,
                                     nil];
     [newStillImageOutput setOutputSettings:outputSettings];
-   // [outputSettings release];
+    [outputSettings release];
     
     
     // Create session (use default AVCaptureSessionPresetHigh)
@@ -226,10 +220,10 @@
     [self setAudioInput:newAudioInput];
     [self setSession:newCaptureSession];
     
-    //[newStillImageOutput release];
-    //[newVideoInput release];
-    //[newAudioInput release];
-    //[newCaptureSession release];
+    [newStillImageOutput release];
+    [newVideoInput release];
+    [newAudioInput release];
+    [newCaptureSession release];
     
 	// Set up the movie file output
     NSURL *outputFileURL = [self tempFileURL];
@@ -251,7 +245,7 @@
 	}
 	
 	[self setRecorder:newRecorder];
-    //[newRecorder release];
+    [newRecorder release];
 	
     success = YES;
     
@@ -302,9 +296,9 @@
 																 [library writeImageToSavedPhotosAlbum:[image CGImage]
 																						   orientation:(ALAssetOrientation)[image imageOrientation]
 																					   completionBlock:completionBlock];
-																 //[image release];
+																 [image release];
 																 
-																// [library release];
+																 [library release];
 															 }
 															 else
 																 completionBlock(nil, error);
@@ -343,7 +337,7 @@
             }
             [[self session] commitConfiguration];
             success = YES;
-            //[newVideoInput release];
+            [newVideoInput release];
         } else if (error) {
             if ([[self delegate] respondsToSelector:@selector(captureManager:didFailWithError:)]) {
                 [[self delegate] captureManager:self didFailWithError:error];
@@ -490,7 +484,7 @@ bail:
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setDateFormat:@"yyyy-MM-dd_HH-mm-ss"];
 	NSString *destinationPath = [documentsDirectory stringByAppendingFormat:@"/output_%@.mov", [dateFormatter stringFromDate:[NSDate date]]];
-	//[dateFormatter release];
+	[dateFormatter release];
 	NSError	*error;
 	if (![[NSFileManager defaultManager] copyItemAtURL:fileURL toURL:[NSURL fileURLWithPath:destinationPath] error:&error]) {
 		if ([[self delegate] respondsToSelector:@selector(captureManager:didFailWithError:)]) {
@@ -546,7 +540,7 @@ bail:
 											[[self delegate] captureManagerRecordingFinished:self];
 										}
 									}];
-		//[library release];
+		[library release];
 	}
 }
 

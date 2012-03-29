@@ -68,7 +68,7 @@
         if ([aSession canAddOutput:aMovieFileOutput])
             [aSession addOutput:aMovieFileOutput];
         [self setMovieFileOutput:aMovieFileOutput];
-        //[aMovieFileOutput release];
+        [aMovieFileOutput release];
 		
 		[self setSession:aSession];
 		[self setOutputFileURL:anOutputFileURL];
@@ -80,10 +80,10 @@
 - (void) dealloc
 {
     [[self session] removeOutput:[self movieFileOutput]];
-	//[session release];
-	//[outputFileURL release];
-	//[movieFileOutput release];
-    //[super dealloc];
+	[session release];
+	[outputFileURL release];
+	[movieFileOutput release];
+    [super dealloc];
 }
 
 -(BOOL)recordsVideo
